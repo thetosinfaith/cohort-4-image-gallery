@@ -1,9 +1,9 @@
 search.addEventListener("keyup", e =>{
     if(e.key == "Enter"){
         let searcValue = search.value,
-            value = searcValue.toLowerCase();
+            value = searchValue.toLowerCase();
             images.forEach(image =>{
-                if(value === image.dataset.name){ //matching value with getting attribute of images
+                if(value === image.dataset.name){ 
                     return image.style. display = "block";
                 }
                 image.style. display = "none";
