@@ -9,12 +9,13 @@
 
 a {
     text-decoration: none;
+
   }
   .hero {
     width: 100%;
     height: 100vh;
-    background: url(assets/images/pexels-sound-on-3394662.jpg);
-    background-size: cover;
+    background-color: beige
+   
   }
   nav {
     display: flex;
@@ -22,62 +23,73 @@ a {
     justify-content: space-around;
     padding: 30px 100px;
   }
+
   .logo {
     max-height: 60px;
   }
+
   nav ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 20px;
   }
+
   nav ul li a {
     color: #1d1d24;
     position: relative;
     padding: 5px 0;
   }
+
   nav ul li a:hover {
-    color: purple;
+    color: orange;
   }
+
   nav ul li a:after {
     content: "";
     position: absolute;
     left: 0;
     width: 0;
     height: 3px;
-    background: purple;
+    background: orange;
     transition: 0.3s;
     bottom: 0;
   }
+
   nav ul li a:hover:after {
     width: 100%;
   }
+
 .container{
     position: relative;
-    min-height: 100vh;
-    max-width: 1000px;
-    width: 100%;
+    height: 100vh; /* Set height to 100vh */
+    width: 70%;
     margin: 0 auto;
     padding: 40px 20px;
+
 }
+
 .container .search-box{
     position: relative;
     height: 42px;
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 40px;
+    background-color: beige;
 }
+
 .search-box input{
     position: absolute;
     height: 100%;
     width: 30%;
     outline: none;
     border: none;
-    background-color: #323334;
+    background-color: beige;
     padding: 0 15px 0 45px;
-    color: #fff;
+    color: white;
     border-radius: 6px;
     
 }
+
 .search-box i{
     position: absolute;
     z-index: 2;
@@ -88,6 +100,7 @@ a {
     transform: translateY(-50%);
     
 }
+
 .container .images .image-box{
     position: relative;
     height: 300px;
@@ -97,25 +110,32 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: beige
 }
+
 .images{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: beige
 }
+
 .images .image-box{
     margin: 8px;
 }
+
 .images .image-box img{
     height: 100%;
     width: auto;
     border-radius: 6px;
     transition: transform 0.2s linear;
 }
+
 .image-box:hover img{
     transform: scale(1.05);
 }
+
 .image-box h6{
     position: absolute;
     bottom: 10px;
@@ -125,3 +145,22 @@ a {
     font-weight: 500;
     text-transform: capitalize;
 }
+
+.lowerAngle {
+  width: 50px;
+  height: 50px;
+  background: black;
+  font-weight: 700;
+  color: beige;
+  position: fixed;
+  top: 620px;
+  right: 258px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 70%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s linear;
+}
+
